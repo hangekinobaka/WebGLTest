@@ -7,7 +7,10 @@ public class DebugText : MonoBehaviour
     public bool showDebug = false;
 
     string ratioText = "";
-
+    private void Start()
+    {
+        Screen.fullScreen = true;
+    }
     public void onResize(string screenSize)
     {
         ratioText = screenSize;
